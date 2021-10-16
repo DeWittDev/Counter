@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/css.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Counter</h1>
+    <h3>{{session['count']}}</h3>
+    <div>
+        <form action='/count' method='post'>
+            <input type='submit' name='2count' value='+2'>
+        </form>
+        <form action='/remove' method='post'>
+            <input type='submit' name='remove' value='Clear'>
+        </form>
+    </div>
+
+</body>
+</html>
