@@ -8,17 +8,21 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <h1>Counter</h1>
-    <h3>{{session['count']}}</h3>
-    <div>
-        <form action='/count' method='post'>
-            <input type='submit' name='2count' value='+2'>
-        </form>
-        <form action='/remove' method='post'>
-            <input type='submit' name='remove' value='Clear'>
-        </form>
+    <div class="container">
+        <h1>Counter</h1>
+        <h3>{{session['count']}}</h3>
+        <div class='box'>
+            <div class='btn'>
+                <form action='/count' method='post'>
+                    <input type='submit' name='2count' value='+2' style='background-color: #60babd; border-radius: 15px;'>
+                </form>
+            </div>
+            <div class='btn'>
+                <form action='/remove' method='post'>
+                    <input type='submit' name='remove' value='Clear' style='background-color: #bd1414; border-radius: 15px;'>
+                </form>
+            </div>
+        </div>
     </div>
-
 </body>
 </html>
